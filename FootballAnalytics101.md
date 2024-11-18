@@ -10,10 +10,15 @@ Expected Goals (xG) assign a numerical probability to the quality of a shot. It 
 2. **xGA** (Expected Goals Against): The sum of xG values for all shots a team allows.
 3. **xGD** (Expected Goals Difference): The difference between xGF and xGA (`xGF - xGA`).
 
-Each data provider has its own formula for calculating xG.  
-The possible values range between **0** (not probable to result in a goal) and **1** (almost certain to result in a goal).
+Each data provider has its own formula for calculating xG, so you may see different xG values for the same shot. This is because not all models account for the same factors.
+
+xGD (Expected Goals Difference) can be a better measure of team strength than traditional goal difference. xG models allow us to look beyond current results to gain a deeper understanding of the underlying quality of both teams and players.
+
+Penalty kick typically have an xG value of 0.76 in most models.
+
 
 #### How xG is Calculated:
+The possible values range between **0** (not probable to result in a goal) and **1** (almost certain to result in a goal).
 A logistic regression is used to calculate the probability of a goal:
 
 $$

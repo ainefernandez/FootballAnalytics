@@ -26,4 +26,4 @@ P_{goal} = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \dots + \beta
 $$
 
 Where:  
-- ( \X_i) are factors such as distance, angle, position, type of shot, and scenario.
+- (X_{i}) are factors such as distance, angle, position, type of shot, and scenario.
